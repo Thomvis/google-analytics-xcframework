@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/GAI.h</key>
 		<data>
-		5fr84HTy9iWMjRaaC8b0+AzLjoo=
+		PWP/Dnt8x7gixe9aMN/FEYK1a+s=
 		</data>
 		<key>Headers/GAIDictionaryBuilder.h</key>
 		<data>
-		q0BOuSWdJxVMHfZbz7G+CmN8OEg=
+		oAXjIuM2eaI4ManpBfT447LLoo4=
+		</data>
+		<key>Headers/GAIEcommerceFields.h</key>
+		<data>
+		bvtBqgWyudcAuZ6Obo7ykaK9FEg=
 		</data>
 		<key>Headers/GAIEcommerceProduct.h</key>
 		<data>
@@ -42,11 +46,11 @@
 		</data>
 		<key>Headers/GoogleAnalytics.h</key>
 		<data>
-		NJaSC3oc5Lv9Vxi6pEZ9LhTB57M=
+		bgxbmW8QoZx5t5CSId/oP3jNC64=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ffk3X13FZ23NG1RrtcuiIW6WFOM=
+		yO25TRUbHOr0fRIUL2PwFd+MPes=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,20 +61,43 @@
 	<dict>
 		<key>Headers/GAI.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PWP/Dnt8x7gixe9aMN/FEYK1a+s=
+			</data>
 			<key>hash2</key>
 			<data>
-			aZ9ehhic6blmwtuyBSsDYSLTm6ILTvYnD9vCKheae+w=
+			Zx6epV7WWmfmHs+iYIyznJI1anCbsc5ECk3DmNuypKo=
 			</data>
 		</dict>
 		<key>Headers/GAIDictionaryBuilder.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oAXjIuM2eaI4ManpBfT447LLoo4=
+			</data>
 			<key>hash2</key>
 			<data>
-			V4RJOx1yI6kmUctEcVds0Vu6h9M6MXZUtmWMQ4+zI2I=
+			OyXOSEg3It3qnt2u82kVZLxpgPCiEIIPVXNFECYRWLI=
+			</data>
+		</dict>
+		<key>Headers/GAIEcommerceFields.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bvtBqgWyudcAuZ6Obo7ykaK9FEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			MDu4OzCeQMvFXB/JdEO4/1dnBdyR9Pn/l2Z1jY/fXHE=
 			</data>
 		</dict>
 		<key>Headers/GAIEcommerceProduct.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mqQ5q34V/FWSC9OkD8mEH5VEX/Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			hgza9sRVwo93hsudIILCxxEFcHFXn4aScThmYpWRJ5w=
@@ -78,6 +105,10 @@
 		</dict>
 		<key>Headers/GAIEcommerceProductAction.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3XfX+NuWZ8vmIoDPei8SDTpx89Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			/0KCIw8PEvtMs26xZy1EM/AFqwt8ex9/eJQOFWteEEY=
@@ -85,6 +116,10 @@
 		</dict>
 		<key>Headers/GAIEcommercePromotion.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			iuTHqBkHkxoVIXKPP65uHX8YZm8=
+			</data>
 			<key>hash2</key>
 			<data>
 			ajkMjEAGPMCLOCayUbj3f5+ABpusWd0PlefM4uZluAU=
@@ -92,6 +127,10 @@
 		</dict>
 		<key>Headers/GAIFields.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LLJ7LFi0nJ/gR1U9r+L3trY2ea8=
+			</data>
 			<key>hash2</key>
 			<data>
 			/T+tAVHFkx1zU452eHD9q73N1BPc7VMCHy/bLNJSOMA=
@@ -99,6 +138,10 @@
 		</dict>
 		<key>Headers/GAILogger.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nOpJHoT7LPVo/OHSCrrUjB+gpbI=
+			</data>
 			<key>hash2</key>
 			<data>
 			8npJINfz7tPiN2bxbktumM9JOECNNlJTtSiGhhbBMSo=
@@ -106,6 +149,10 @@
 		</dict>
 		<key>Headers/GAITrackedViewController.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			27Vx25gXTUsOVIKRVUiUFL1k+sk=
+			</data>
 			<key>hash2</key>
 			<data>
 			e51QN8LztCp9IbvJbHwTc4r/RQctq7ztZjTiAaOYqQA=
@@ -113,6 +160,10 @@
 		</dict>
 		<key>Headers/GAITracker.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LDXEnQhyCGF4gDFo2/rJF1eKUwY=
+			</data>
 			<key>hash2</key>
 			<data>
 			1F0U9gpKJ2SL/ToBo8fMjY64nHCjTai2Iv7Ea+86hWw=
@@ -120,13 +171,21 @@
 		</dict>
 		<key>Headers/GoogleAnalytics.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bgxbmW8QoZx5t5CSId/oP3jNC64=
+			</data>
 			<key>hash2</key>
 			<data>
-			9BkiDimXpdPpodMtwiumGFeDBgBFOev6UFjiTB2K4/g=
+			oz72VqXOG8jWdFBzPf1VItwL4ICLnMIOYj5h+ZLOM7Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xthvlgteaAgNk2Yj9TekOHKTn/o=
+			</data>
 			<key>hash2</key>
 			<data>
 			BE13D/yamRctaYVHcGvtSQVTxijdMamQX4sqFzc+k68=
