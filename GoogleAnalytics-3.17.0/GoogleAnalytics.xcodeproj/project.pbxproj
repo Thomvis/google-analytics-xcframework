@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		E9D639421DD512190077812F /* UniversalFramework */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = E9D639431DD512190077812F /* Build configuration list for PBXAggregateTarget "UniversalFramework" */;
-			buildPhases = (
-				E9D639461DD5121C0077812F /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = UniversalFramework;
-			productName = UniversalFramework;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		E9D639121DD511240077812F /* GoogleAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = E9D639101DD511240077812F /* GoogleAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9D6391A1DD511400077812F /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D639181DD511400077812F /* libAdIdAccess.a */; };
@@ -208,10 +194,6 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					E9D639421DD512190077812F = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = E9D639071DD511240077812F /* Build configuration list for PBXProject "GoogleAnalytics" */;
@@ -228,7 +210,6 @@
 			projectRoot = "";
 			targets = (
 				E9D6390C1DD511240077812F /* GoogleAnalytics */,
-				E9D639421DD512190077812F /* UniversalFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -242,22 +223,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E9D639461DD5121C0077812F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=true\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks\n######################\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} OTHER_CFLAGS=\"-fembed-bitcode\" clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} OTHER_CFLAGS=\"-fembed-bitcode\" clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n                                                                      cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n                                                                      fi\n                                                                      \n                                                                      ######################\n                                                                      # On Release, copy the result to release directory\n                                                                      ######################\n                                                                      OUTPUT_DIR=\"${PROJECT_DIR}/\"\n                                                                      \n                                                                      cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n                                                                      \n                                                                      if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n                                                                      open \"${OUTPUT_DIR}/\"\n                                                                      fi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9D639081DD511240077812F /* Sources */ = {
@@ -416,20 +381,6 @@
 			};
 			name = Release;
 		};
-		E9D639441DD512190077812F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E9D639451DD512190077812F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,15 +398,6 @@
 			buildConfigurations = (
 				E9D639161DD511240077812F /* Debug */,
 				E9D639171DD511240077812F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9D639431DD512190077812F /* Build configuration list for PBXAggregateTarget "UniversalFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9D639441DD512190077812F /* Debug */,
-				E9D639451DD512190077812F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

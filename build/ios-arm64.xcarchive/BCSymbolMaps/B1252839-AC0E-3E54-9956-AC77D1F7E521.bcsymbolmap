@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2)
 /Applications/Xcode-13.3.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk
 iPhoneOS15.4.sdk
-/Users/thomas/Library/Developer/Xcode/DerivedData/GoogleAnalytics-frifxuzsowyqyacldcxyiggdesjs/Build/Intermediates.noindex/ArchiveIntermediates/GoogleAnalytics/IntermediateBuildFilesPath/GoogleAnalytics.build/Release-iphoneos/GoogleAnalytics.build/DerivedSources/GoogleAnalytics_vers.c
-/Users/thomas/Projects/Tools/google-analytics-xcframework/GoogleAnalytics-3.17.0
+/Users/thomas/Library/Developer/Xcode/DerivedData/GoogleAnalytics-ccvtjmkadqskzlfpdewhemhgcqab/Build/Intermediates.noindex/ArchiveIntermediates/GoogleAnalytics/IntermediateBuildFilesPath/GoogleAnalytics.build/Release-iphoneos/GoogleAnalytics.build/DerivedSources/GoogleAnalytics_vers.c
+/Users/thomas/Highstreet/Clients/rosies/ios/core/Dependencies/GoogleAnalytics/GoogleAnalytics-3.17.0
 +[TAGActualAdIdAccess load]
 +[TAGActualAdIdAccess retrieveId]
 +[TAGActualAdIdAccess retrieveTrackingFlag]

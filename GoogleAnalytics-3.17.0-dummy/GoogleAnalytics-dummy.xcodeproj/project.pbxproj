@@ -26,6 +26,7 @@
 		E9D6393D1DD511FB0077812F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D6393C1DD511FB0077812F /* AdSupport.framework */; };
 		E9D6393F1DD512020077812F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D6393E1DD512020077812F /* SystemConfiguration.framework */; };
 		E9D639411DD512090077812F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D639401DD512090077812F /* libsqlite3.tbd */; };
+		E9F980492823C6B7009C61EE /* DummyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F980472823C6A9009C61EE /* DummyImplementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E9D6393C1DD511FB0077812F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E9D6393E1DD512020077812F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E9D639401DD512090077812F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E9F980472823C6A9009C61EE /* DummyImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DummyImplementation.m; path = Sources/DummyImplementation.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				E9D6391C1DD511670077812F /* Headers */,
 				E9D639101DD511240077812F /* GoogleAnalytics.h */,
+				E9F980472823C6A9009C61EE /* DummyImplementation.m */,
 				E9D639111DD511240077812F /* Info.plist */,
 			);
 			path = GoogleAnalytics;
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F980492823C6B7009C61EE /* DummyImplementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

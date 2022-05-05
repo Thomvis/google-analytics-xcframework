@@ -1,7 +1,9 @@
 frameworks/GoogleAnalytics.xcframework: build/ios-arm64.xcarchive build/ios-arm64_x86_64-simulator.xcarchive
 	xcodebuild -create-xcframework \
 		-framework ./build/ios-arm64.xcarchive/Products/Library/Frameworks/GoogleAnalytics.framework \
+		-debug-symbols $(shell pwd)/build/ios-arm64.xcarchive/dSYMs/GoogleAnalytics.framework.dSYM \
 		-framework ./build/ios-arm64_x86_64-simulator.xcarchive/Products/Library/Frameworks/GoogleAnalytics.framework \
+		-debug-symbols $(shell pwd)/build/ios-arm64_x86_64-simulator.xcarchive/dSYMs/GoogleAnalytics.framework.dSYM \
 		-output ./frameworks/GoogleAnalytics.xcframework
 
 build/ios-arm64.xcarchive:
